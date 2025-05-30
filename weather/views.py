@@ -1,5 +1,6 @@
 # weather/views.py
 import requests
+import os
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth import login, authenticate, logout
@@ -41,9 +42,9 @@ def logout_view(request):
 
 @login_required(login_url='login')
 def index(request):
-    # Replace with your actual API key
-    api_key = "YOUR_API_KEY"
-    url = f'https://api.openweathermap.org/data/2.5/weather?q={{city}}&units=metric&appid=56f2ede7956e1f8f48ee5049620416a8'
+    # Get API key from environment variable
+    api_key = os.getenv('WEATHER_API_KEY', '56f2ede7956e1f8f48ee5049620416a8')  # Fallback for development
+    url = f'https://api.openweathermap.org/data/2.5/weather?q={{city}}&units=metric&appid={api_key}'
     
     weather_data = None
     error_message = None
